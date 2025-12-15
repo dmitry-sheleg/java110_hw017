@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        List<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<>(); // <-- Список дел<>
 
         while (true) {
             System.out.println("Выберите операцию:");
