@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        List<String> list = new ArrayList<>(); // <-- Список дел<>
+        List<String> list = new ArrayList<>();
 
         while (true) {
             System.out.println("Выберите операцию:");
@@ -23,7 +23,7 @@ public class Main {
             if (operation == 0) {
                 System.out.println("Программа завершена.");
                 break;
-            }else{
+            } else {
                 switch (operation) {
                     case 1:
                         System.out.println("Введите название задачи:");
@@ -39,7 +39,7 @@ public class Main {
                         if (index > 0 && index <= list.size()) {
                             list.remove(index - 1);
                             System.out.println("Удалено!");
-                        }else{
+                        } else {
                             System.out.println("Задачи с таким номером не существует");
                         }
                         break;
@@ -49,7 +49,7 @@ public class Main {
                         if (list.contains(task)) {
                             list.remove(task);
                             System.out.println("Удалено!");
-                        }else{
+                        } else {
                             System.out.println("Задачи с таким названием не существует");
                         }
                         break;
@@ -67,7 +67,7 @@ public class Main {
                         }
                         if (count == 0) {
                             System.out.println("Задач с таким ключевым словом не найдено");
-                        }else{
+                        } else {
                             System.out.println("Удалено дел: " + count);
                         }
                         break;
